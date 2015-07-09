@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebRTC P2P Tic Tac Toe</title>
+    <script src="http://cdn.peerjs.com/0.3/peer.min.js"></script>
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/104946/animate.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WebRTC P2P Tic Tac Toe">
+    <meta name="author" content="Josh Fabean">
+    <meta name="keywords" content="p2p,webrtc,tic tac toe,game,gaming,html5 gaming">
+    <meta property="og:title" content="P2P Chat">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://joshfabean.com/demos/javascript-p2p-chat/index.html">
+    <meta property="og:description" content="WebRTC P2P Tic Tac Toe">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="http://joshfabean.com/demos/javascript-p2p-chat/index.html">
+    <meta name="twitter:title" content="WebRTC P2P Chat">
+    <meta name="twitter:description" content="WebRTC P2P Tic Tac Toe">
+    <meta name="twitter:site" content="@joshfabean">
+    <meta name="twitter:creator" content="@joshfabean">
+  </head>
+  <body>
+    <header class="top">
+      <div id="init-wrapper">
+        <input id="name-input" type="text" placeholder="Your name">
+        <button id="set-name" type="button" class="blue ghost">Set Name</button>
+        <button id="show-host" class="hide inline-block blue ghost">Host Game</button>
+        <div id="host" class="hide inline-block">
+          <div id="your-id"><span>your id is:</span></div>
+        </div>
+        <button id="show-join" class="hide inline-block blue ghost">Join Game</button>
+        <div id="join" class="hide inline-block">
+          <form>
+            <label for="id">Friends ID:</label>
+            <input id="friends-peer-id" name="id" type="text">
+            <button id="join-host" type="button" class="blue ghost">join</button>
+          </form>
+        </div>
+      </div>
+      <div id="connected" class="hide"></div>
+    </header>
+    <section class="inner">
+      <div id="output"></div>
+    </section>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
